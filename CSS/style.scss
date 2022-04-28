@@ -600,11 +600,241 @@ a{
 }
 .copyrights{
     margin-top: 128px;
-    width: 100vw;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+
+}
+.copyrights2{
+    margin-top: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #EF3959;
+}
+.plan{
+    margin-top: 128px;
+
+    .plan__row{
+        
+        .title{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 58px;            
+        }
+        .plans{
+            display: flex;
+            margin-top: 96px;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+
+            .table{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 262px;
+                height: 304px;
+                margin-right: 56px;
+                background-color: rgba(168, 126, 126, 0.73);
+                border-radius: 8px;                
+                
+                .term{
+                    margin-top: 16px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: white;                    
+                }
+                .fee{
+                    display: flex;
+                    margin-top: 70px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: white;                    
+
+                    .count{
+                        font-size: 64px;
+                        margin-left: 8px;
+                        margin-right: 8px;
+                    }
+                }
+                .discount{
+                    margin-top: 30px;
+                    color: white;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;  
+                    text-decoration-line: line-through;
+                  
+                }
+                .button{
+                    border: 1px solid #EF3959;
+                    border-radius: 72px;                    
+                    background: transparent;
+                    margin-top: 24px;
+                    padding: 16px 32px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #EF3959;                    
+                }
+                .moneyback{
+                    margin-top: 24px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: white;                    
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.FAQ{
+    margin-top: 256px;
+    .FAQ__row{
+        display: flex;
+
+        .left{
+            width: 50%;
+
+            .title{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 58px;                
+            }
+            .questions{
+                margin-top: 16px;
+                .question{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 36px;        
+                    margin-top: 24px;
+                    width: 100%;
+                    border-bottom: 1px solid #A4C2FF;            
+                }
+            }
+        }
+        .right{
+            width: 50%;
+            position: relative;
+
+            .watchVideo{
+                position: absolute;
+                left: -82px;
+                top: -140px;
+            }
+            .Choosetheplan{
+                width: 192px;
+                height: 192px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #EF3959;
+                border-radius: 135px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 36px;
+                text-align: center;
+                color: #FFFFFF;    
+                position: absolute;
+                left: 365px;
+                top: 115px;            
+            }
+            .AskaQuestion{
+                width: 192px;
+                height: 192px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(255, 255, 255, 0.4);
+                border-radius: 135px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 36px;
+                text-align: center;
+                position: absolute;
+                left: 67px;
+                top: 288px;                
+            }
+        }
+    }
+}
+.footer{
+    margin-top: 392px;
+
+    .footer__row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer__logo{
+            display: flex;
+            align-items: center;
+
+            .logoText{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 36px;                
+            }
+        }
+        .nav{
+            margin-top: 16px;
+            display: flex;
+
+            .navi{
+                margin-left: 16px;
+                margin-right: 16px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;                
+            }
+
+        }
+        .copyright{
+            margin: 16px 0;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.6);            
+        }
+    }
 }
