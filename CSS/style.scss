@@ -508,6 +508,7 @@ a{
                 font-family: 'Inter';
                 margin-top: 60px;
                 color: #A4C2FF;
+                background: transparent;
 
                 &::placeholder{
                     font-size: 30px;
@@ -574,7 +575,7 @@ a{
                     height: 64px;            
                     border-radius: 135px;
                     box-shadow: 0px 0px 20px rgba(74, 134, 255, 0.4);
-                    background-color: white;
+                    background-color: rgba(255, 255, 255, 0.2);
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -713,6 +714,33 @@ a{
                 &:last-child{
                     margin-right: 0;
                 }
+                &:nth-child(2){
+                    position: relative;
+
+                    .button{
+                        background-color: rgba(255, 255, 255, 0.4);
+                    }
+                    .alert{
+                        position: absolute;
+                        padding: 8px 16px;
+                        background: #EF3959;
+                        border-radius: 16px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: white; 
+                        left: 160px;
+                        top: -40px;  
+                        
+                        img{
+                            position: absolute;
+                            left: 5px;
+                            top: 32px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -735,14 +763,21 @@ a{
             .questions{
                 margin-top: 16px;
                 .question{
+                    display: flex;
+                    justify-content: space-between;
                     font-family: 'Inter';
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 30px;
+                    font-size: 28px;
                     line-height: 36px;        
                     margin-top: 24px;
                     width: 100%;
-                    border-bottom: 1px solid #A4C2FF;            
+                    border-bottom: 1px solid #A4C2FF;    
+                    
+                    img{
+                        transform: rotate(-90deg);
+                        margin-right: 20px;
+                    }
                 }
             }
         }
@@ -865,9 +900,9 @@ a{
             width: 770px;
             height: 617px;
             left: calc(50% - 770px/2 - 449px);
-            top: 181px;
+            top: 250px;
             background: rgba(74, 134, 255, 0.3); 
-            filter: blur(150px);
+            filter: blur(100px);
         }
         &:nth-child(2){
             width: 1000px;
